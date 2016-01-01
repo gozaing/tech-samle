@@ -32,7 +32,7 @@ public class Judge
         }
         else
         {
-            System.out.println(finalWinner.getName() + "引き分けです\n");
+            System.out.println("引き分けです\n");
         }
     }
 
