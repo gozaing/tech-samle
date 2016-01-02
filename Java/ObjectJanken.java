@@ -5,7 +5,7 @@ public class ObjectJanken
         Judge saito = new Judge();
 
         Player murata = new Player("村田さん");
-        Tactics murataTactics = new RandomTactics();
+        Tactics murataTactics = new StoneOnlyTactics();
         murata.setTactics(murataTactics);
 
         Player yamada = new Player("山田さん");
