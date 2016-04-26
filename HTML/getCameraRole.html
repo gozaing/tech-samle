@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+        <title>camera</title>
+    </head>
+    <body>
+
+        <form method="post" enctype="multipart/form-data">
+                <input type="file" id="cameraImage" name="upload_image" accept="image/*" capture="camera">
+            </form>
+
+
+            <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+            <script>
+
+                $(document).ready(function(){
+                        // 画像を選択
+                            $('#cameraImage').bind('change', inputFileHandler);
+                        });
+
+                        // 画像選択時イベント
+                        function inputFileHandler(e) {
+                                console.log("inputFileHandler", e);
+                            }
+
+                        </script>
+
+                    </body>
+                </html>
